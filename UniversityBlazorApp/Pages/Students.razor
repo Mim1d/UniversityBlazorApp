@@ -1,0 +1,59 @@
+﻿@page "/students"
+
+<PageTitle>Студенты</PageTitle>
+
+@using UniversityBlazorApp.Data
+@using UniversityBlazorApp.Context
+@inject WeatherForecastService ForecastService
+
+<h1>Студенты</h1>
+
+@if (students == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Имя</th>
+                <th>Отчество</th>
+                <th>Фамилия</th>
+                <th>email</th>
+                <th>Телефон</th>
+                <th>Курс</th>
+                <th>Дата рождения</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in students)
+            {
+                <tr>
+                    <td>@student.Id</td>
+                    <td>@student.FirstName</td>
+                    <td>@student.MiddleName</td>
+                    <td>@student.FamilyName</td>
+                    <td>@student.Email</td>
+                    <td>@student.Phone</td>
+                    <td>@student.Class</td>
+                    <td>@student.Birthdate</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Student[]? students;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using (universityContext db = new universityContext())
+            {
+                students = db.Students.ToArray();
+            }
+       // forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+    }
+}
