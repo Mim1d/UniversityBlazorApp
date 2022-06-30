@@ -31,6 +31,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/NewStudent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3U3R1ZGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/StudenDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVuRGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/Students.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

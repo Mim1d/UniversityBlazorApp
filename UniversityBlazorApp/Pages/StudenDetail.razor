@@ -1,0 +1,19 @@
+﻿@using UniversityBlazorApp.Data
+
+<EditForm Model="@studentModel" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <InputText id="name" @bind-Value="studentModel.FirstName" />
+    <button type="submit">Submit</button>
+</EditForm>
+
+@code {
+    private Student studentModel = new();
+
+    private void HandleValidSubmit()
+    {
+        //logger.LogInformation("HandleValidSubmit called");
+
+        // Process the valid form
+    }
+}

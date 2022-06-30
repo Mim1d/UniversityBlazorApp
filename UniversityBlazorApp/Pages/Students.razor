@@ -4,7 +4,6 @@
 
 @using UniversityBlazorApp.Data
 @using UniversityBlazorApp.Context
-@inject WeatherForecastService ForecastService
 
 <h1>Студенты</h1>
 
@@ -54,6 +53,5 @@ else
             {
                 students = db.Students.ToArray();
             }
-       // forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
     }
 }
