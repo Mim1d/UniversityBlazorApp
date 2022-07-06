@@ -19,24 +19,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/CreateStudent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlU3R1ZGVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+[C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/DeleteStudent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlU3R1ZGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/EditStudent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFN0dWRlbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/NewStudent.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3U3R1ZGVudC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/StudenDetail.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVuRGV0YWlsLnJhem9y
+[C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/StudentDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudERldGFpbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/daluk/source/repos/UniversityBlazorApp/UniversityBlazorApp/Pages/Students.razor]

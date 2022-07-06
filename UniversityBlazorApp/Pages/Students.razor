@@ -1,11 +1,12 @@
 ﻿@page "/students"
-
-<PageTitle>Студенты</PageTitle>
-
-@using UniversityBlazorApp.Data
 @inject IPostgreSQLService service
 
 <h1>Студенты</h1>
+
+<div class="form-group">
+ <a class="btn btn-info" href="createstudent">
+ <i class="oi oi-plus"></i> Create New</a>
+</div>
 
 @if (students == null)
 {
@@ -53,14 +54,10 @@ else
 }
 
 @code {
-    //private Student[]? students;
     private IEnumerable<Student> students;
+
     protected override async Task OnInitializedAsync()
     {
-       students = await service.GetStudentsAsync();
-        //using (universityContext db = new universityContext())
-        //    {
-        //        students = db.Students.ToArray();
-        //    }
+        students = await service.GetStudentsAsync();
     }
 }

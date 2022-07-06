@@ -15,9 +15,9 @@ namespace UniversityBlazorApp.Data
         {
             this.db = db;
         }
-        public async Task<List<Student>> GetStudentsAsync()
+        public Task<List<Student>> GetStudentsAsync()
         {
-            return await db.Students.ToListAsync();
+            return db.Students.ToListAsync();
         }
         public Task<Student> GetStudentAsync(int id)
         {
@@ -38,8 +38,7 @@ namespace UniversityBlazorApp.Data
         }
         public Task DeleteStudentAsync(int id)
         {
-            Student student = db.Students.FirstOrDefaultAsync
-            (c => c.Id == id).Result;
+            Student student = db.Students.Where(c => c.Id == id).FirstOrDefault();
             db.Students.Remove(student);
             return db.SaveChangesAsync();
         }

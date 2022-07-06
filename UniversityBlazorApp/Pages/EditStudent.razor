@@ -1,0 +1,24 @@
+﻿@page "/editstudent/{Id}"
+@inject IPostgreSQLService service
+@inject NavigationManager navigation
+
+<h3>Edit Student</h3>
+
+<StudentDetail ButtonText="Update"
+               Student="@student"
+               OnValidSubmit="@Update" />
+
+@code {
+ [Parameter]
+ public string Id { get; set; }
+ private Student student = new Student();
+ protected async override Task OnParametersSetAsync()
+ {
+    student = await service.GetStudentAsync(Int32.Parse(Id));
+ }
+ private async Task Update()
+ {
+     await service.UpdateStudentAsync(student);
+     navigation.NavigateTo("students", true);
+ }
+}

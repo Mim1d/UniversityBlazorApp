@@ -1,0 +1,27 @@
+﻿@page "/deletestudent/{Id}"
+@inject IPostgreSQLService service
+@inject NavigationManager navigation
+
+<h3>Delete Student</h3>
+<div class="alert alert-danger">
+    Warning! This action cannot be undone!
+</div>
+<StudentDetail ButtonText="Delete Student"
+                ButtonStyle="danger"
+                Student="@student"
+                OnValidSubmit="@Delete" />
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+    private Student student = new Student();
+    protected async override Task OnParametersSetAsync()
+    {
+        student = await service.GetStudentAsync(Int32.Parse(Id));
+    }
+    private async Task Delete()
+    {
+         await service.DeleteStudentAsync(Int32.Parse(Id));
+         navigation.NavigateTo("students", true);
+    }
+}

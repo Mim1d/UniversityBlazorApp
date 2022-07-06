@@ -1,0 +1,88 @@
+﻿<EditForm Model="@Student" OnValidSubmit="@OnValidSubmit">
+    <DataAnnotationsValidator />
+     <div class="form-grop">
+        <div>
+            <label>Student Name</label>
+            <div>
+                <InputText @bind-Value="@Student.FirstName" />
+                <ValidationMessage
+                For ="@(() => Student.FirstName)"/>
+            </div>
+        </div>
+     </div>
+     <div class="form-grop">
+       <div>
+           <label>Student MiddleName</label>
+           <div>
+               <InputText @bind-Value="@Student.MiddleName" />
+               <ValidationMessage                  
+               For ="@(() => Student.MiddleName)"/>
+           </div>
+       </div>
+     </div>
+     <div class="form-grop">
+        <div>
+            <label>Student Family</label>
+            <div>
+                <InputText @bind-Value="@Student.FamilyName" />
+                <ValidationMessage
+                    For ="@(() => Student.FamilyName)"/>
+            </div>
+        </div>
+     </div>
+     <div class="form-grop">
+        <div>
+            <label>Student Class</label>
+            <div>
+                <InputNumber @bind-Value="@Student.Class" />
+                <ValidationMessage
+                    For ="@(() => Student.Class)"/>
+            </div>
+        </div>
+     </div>
+     <div class="form-grop">
+        <div>
+            <label>Student Phone</label>
+            <div>
+                <InputText @bind-Value="@Student.Phone" />
+                <ValidationMessage
+                    For ="@(() => Student.Phone)"/>
+            </div>
+        </div>
+     </div>
+     <div class="form-grop">
+        <div>
+            <label>Student Email</label>
+            <div>
+                <InputText @bind-Value="@Student.Email" />
+                <ValidationMessage
+                    For ="@(() => Student.Email)"/>
+            </div>
+        </div>
+     </div>
+     <div class="form-grop">
+        <div>
+            <label>Student Birthdate</label>
+            <div>
+                <InputDate @bind-Value="@Student.Birthdate" />
+                <ValidationMessage
+                    For ="@(() => Student.Birthdate)"/>
+            </div>
+        </div>
+     </div>
+     <button type="submit" class="btn btn-@ButtonStyle">
+     @ButtonText
+     </button>
+</EditForm>
+
+
+ @code {
+     [Parameter]
+     public Student Student { get; set; }
+     [Parameter]
+     public string ButtonText { get; set; } = "Save Changes";
+     [Parameter]
+     public string ButtonStyle { get; set; } = "info";
+     [Parameter]
+     public EventCallback OnValidSubmit { get; set; }
+}

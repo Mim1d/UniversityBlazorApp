@@ -1,0 +1,17 @@
+﻿@page "/createstudent"
+@inject IPostgreSQLService service
+@inject NavigationManager navigation
+
+<h3>Create Student</h3>
+<StudentDetail ButtonText="Create Student"
+               Student="@student"
+               OnValidSubmit="@Create" />
+
+@code {
+    private Student student = new Student();
+    private async Task Create()
+    {
+        await service.CreateStudentAsync(student);
+        navigation.NavigateTo("students", true);
+    }
+}
