@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using UniversityEntitiesLib;
 
-namespace UniversityBlazorApp.Data
+namespace UniversityBlazorApp.Services
 {
     public interface IPostgreSQLService
     {

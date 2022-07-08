@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using UniversityBlazorApp.Context;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using UniversityEntitiesLib;
 
-namespace UniversityBlazorApp.Data
+namespace UniversityBlazorApp.Services
 
 {
     public class PostgreSQLService : IPostgreSQLService

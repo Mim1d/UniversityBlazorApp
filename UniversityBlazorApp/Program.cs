@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using UniversityBlazorApp.Data;
-using UniversityBlazorApp.Context;
+//using UniversityBlazorApp.Data;
+//using UniversityBlazorApp.Context;
+using UniversityEntitiesLib;
+using UniversityBlazorApp.Services;
 using Microsoft.EntityFrameworkCore;
 using System.IO;
 

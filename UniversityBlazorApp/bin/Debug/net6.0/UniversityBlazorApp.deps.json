@@ -9,7 +9,8 @@
       "UniversityBlazorApp/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Tools": "6.0.6",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.5"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.5",
+          "UniversityEntitiesLib": "1.0.0.0"
         },
         "runtime": {
           "UniversityBlazorApp.dll": {}
@@ -166,7 +167,15 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {}
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "UniversityEntitiesLib/1.0.0.0": {
+        "runtime": {
+          "UniversityEntitiesLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -321,6 +330,11 @@
       "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "UniversityEntitiesLib/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
