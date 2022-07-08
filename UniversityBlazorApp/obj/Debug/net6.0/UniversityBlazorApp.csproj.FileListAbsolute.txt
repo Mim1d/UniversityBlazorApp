@@ -34,3 +34,5 @@ C:\Users\daluk\source\repos\UniversityBlazorApp\UniversityBlazorApp\bin\Debug\ne
 C:\Users\daluk\source\repos\UniversityBlazorApp\UniversityBlazorApp\obj\Debug\net6.0\UniversityBlazorApp.csproj.CopyComplete
 C:\Users\daluk\source\repos\UniversityBlazorApp\UniversityBlazorApp\bin\Debug\net6.0\Humanizer.dll
 C:\Users\daluk\source\repos\UniversityBlazorApp\UniversityBlazorApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\daluk\source\repos\UniversityBlazorApp\UniversityBlazorApp\bin\Debug\net6.0\UniversityEntitiesLib.dll
+C:\Users\daluk\source\repos\UniversityBlazorApp\UniversityBlazorApp\bin\Debug\net6.0\UniversityEntitiesLib.pdb
